@@ -1,0 +1,4 @@
+EQ > 24Hz
+High Pass filter, 800 - 1000 Hz / 6db
+Low Pass filter 3000
+leveller default

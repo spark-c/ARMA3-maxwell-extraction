@@ -1,0 +1,64 @@
+respawnTemplates[] = { "Tickets", "Counter", "MenuPosition" };
+respawn = "BASE"
+respawnDelay = 15;
+RespawnOnStart = -1;
+
+class CfgRadio
+{
+	sounds[] = {};
+	
+	class Introduction
+	{
+			name = "introduction";
+			sound[] = {"\sound\introduction.ogg", db+0, 1.0};
+			title = "PLACEHOLDER mission start";
+	};
+	class Intel_Complete
+	{
+			name = "intel_complete";
+			sound[] = {"\sound\intel_complete.ogg", db+0, 1.0};
+			title = "PLACEHOLDER intel complete, approach Maxwell";
+	};
+	class TestAudio1
+	{
+			name = "testaudio1";
+			sound[] = {"\sound\testaudio1.ogg", db+0, 1.0};
+			title = "PLACEHOLDER This is Test Audio Number One.";
+	};
+	class Maxwell_Complete
+	{
+			name = "maxwell_complete";
+			sound[] = {"\sound\maxwell_complete.ogg", db+0, 1.0};
+			title = "PLACEHOLDER pow located and rescued exfil hill";
+	};
+	class Reinforcements_Nearby
+	{
+			name = "reinforcements_nearby";
+			sound[] = {"\sound\reinforcements_nearby.ogg", db+0, 1.0};
+			title = "PLACEHOLDER reinforcements_nearby";
+	};
+	class Girna_Contact
+	{
+			name = "girna_contact";
+			sound[] = {"\sound\girna_contact.ogg", db+0, 1.0};
+			title = "PLACEHOLDER Girna counterattack beginning";
+	};
+	class Success_Mission
+	{
+			name = "success_mission";
+			sound[] = {"\sound\success_mission.ogg", db+0, 1.0};
+			title = "PLACEHOLDER successful mission complete";
+	};
+	class Failure_Mission
+	{
+			name = "failure_mission";
+			sound[] = {"\sound\failure_mission.ogg", db+0, 1.0};
+			title = "PLACEHOLDER failure mission complete";
+	};
+	class POW_Not_Alive
+	{
+			name = "pow_not_alive";
+			sound[] = {"\sound\pow_not_alive.ogg", db+0, 1.0};
+			title = "PLACEHOLDER pow not alive";
+	};
+};
