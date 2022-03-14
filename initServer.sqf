@@ -1,0 +1,1 @@
+if (isNil "playerLeader") then {["end1", false, 2] call BIS_fnc_endMission};
