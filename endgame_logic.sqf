@@ -1,4 +1,4 @@
-if (alive hostage) && (hostage inArea endpoint) then
+if ((alive hostage) && (hostage inArea endpoint)) then
 	{
 		[[west, "HQ"], "Success_Mission"] remoteExec ["sideRadio"];
 	}
