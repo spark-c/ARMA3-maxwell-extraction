@@ -1,4 +1,4 @@
-# Maxwell Extraction
+# [CO-OP] Maxwell Extraction
 
 (WIP)
 
@@ -12,6 +12,7 @@ A POW is held at Camp Maxwell, and your primary objective is to safely extract h
 
 ## Installation
 (PLACEHOLDER - Better instructions in the future)
+
 For a dedicated server: Place or `git clone` this repo into your server's ~/mpmissions directory
 
 For a listen/client-hosted server: Place or `git clone` this repo into your PROFILE's /mpmissions directory. On Windows, this will probably look something like 
