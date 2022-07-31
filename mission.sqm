@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1665;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1880.5475,36.239021,3285.3647};
-		dir[]={0.62169981,-0.7313599,0.28038695};
-		up[]={0.66669762,0.68198586,0.30068088};
-		aside[]={0.41112599,8.6733053e-008,-0.91158551};
+		pos[]={1413.2128,30.199923,2353.2146};
+		dir[]={-0.82718539,-0.56031358,0.044626955};
+		up[]={-0.55955464,0.82821912,0.030185554};
+		aside[]={0.05387193,2.9044259e-007,0.99863517};
 	};
 };
 binarizationWanted=0;
@@ -13437,23 +13437,23 @@ class Mission
 		class Item104
 		{
 			dataType="Trigger";
-			position[]={1318.6716,0,2357.6357};
+			position[]={1318.672,0.00032424927,2357.636};
 			angle=0.78887141;
 			class Attributes
 			{
 				name="endpoint";
 				condition="call{this}";
-				onActivation="call{0 = [] execVM ""endgame_logic.sqf"";}";
+				onActivation="call{0 = [] execVM ""endgame_logic.sqf""; ""ENDPOINT ACTIVATED"" remoteExec [""hint""];}";
 				sizeA=70;
 				sizeB=70;
 				timeout[]={2,2,2};
-				activationBy="WEST";
+				activationBy="ANYPLAYER";
 				activationByOwner="MEMBER";
 				isRectangle=1;
 			};
 			id=422;
 			type="EmptyDetector";
-			atlOffset=39.294685;
+			atlOffset=39.294994;
 		};
 		class Item105
 		{
@@ -23688,18 +23688,18 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=422;
-				item1=2;
+				item0=190;
+				item1=417;
 				class CustomData
 				{
-					type="TriggerOwner";
+					type="Sync";
 				};
 			};
 			class Item49
 			{
 				linkID=49;
-				item0=190;
-				item1=417;
+				item0=99;
+				item1=418;
 				class CustomData
 				{
 					type="Sync";
@@ -23708,8 +23708,8 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=99;
-				item1=418;
+				item0=20;
+				item1=423;
 				class CustomData
 				{
 					type="Sync";
@@ -23718,8 +23718,8 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=20;
-				item1=423;
+				item0=442;
+				item1=362;
 				class CustomData
 				{
 					type="Sync";
@@ -23728,7 +23728,7 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=442;
+				item0=443;
 				item1=362;
 				class CustomData
 				{
@@ -23738,7 +23738,7 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=443;
+				item0=444;
 				item1=362;
 				class CustomData
 				{
@@ -23748,7 +23748,7 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=444;
+				item0=445;
 				item1=362;
 				class CustomData
 				{
@@ -23758,7 +23758,7 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=445;
+				item0=432;
 				item1=362;
 				class CustomData
 				{
@@ -23768,7 +23768,7 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=432;
+				item0=433;
 				item1=362;
 				class CustomData
 				{
@@ -23778,7 +23778,7 @@ class Mission
 			class Item57
 			{
 				linkID=57;
-				item0=433;
+				item0=434;
 				item1=362;
 				class CustomData
 				{
@@ -23788,7 +23788,7 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=434;
+				item0=435;
 				item1=362;
 				class CustomData
 				{
@@ -23798,7 +23798,7 @@ class Mission
 			class Item59
 			{
 				linkID=59;
-				item0=435;
+				item0=437;
 				item1=362;
 				class CustomData
 				{
@@ -23808,7 +23808,7 @@ class Mission
 			class Item60
 			{
 				linkID=60;
-				item0=437;
+				item0=438;
 				item1=362;
 				class CustomData
 				{
@@ -23818,7 +23818,7 @@ class Mission
 			class Item61
 			{
 				linkID=61;
-				item0=438;
+				item0=439;
 				item1=362;
 				class CustomData
 				{
@@ -23828,7 +23828,7 @@ class Mission
 			class Item62
 			{
 				linkID=62;
-				item0=439;
+				item0=440;
 				item1=362;
 				class CustomData
 				{
@@ -23838,7 +23838,7 @@ class Mission
 			class Item63
 			{
 				linkID=63;
-				item0=440;
+				item0=427;
 				item1=362;
 				class CustomData
 				{
@@ -23848,7 +23848,7 @@ class Mission
 			class Item64
 			{
 				linkID=64;
-				item0=427;
+				item0=428;
 				item1=362;
 				class CustomData
 				{
@@ -23858,7 +23858,7 @@ class Mission
 			class Item65
 			{
 				linkID=65;
-				item0=428;
+				item0=429;
 				item1=362;
 				class CustomData
 				{
@@ -23868,7 +23868,7 @@ class Mission
 			class Item66
 			{
 				linkID=66;
-				item0=429;
+				item0=430;
 				item1=362;
 				class CustomData
 				{
@@ -23878,8 +23878,8 @@ class Mission
 			class Item67
 			{
 				linkID=67;
-				item0=430;
-				item1=362;
+				item0=442;
+				item1=364;
 				class CustomData
 				{
 					type="Sync";
@@ -23888,7 +23888,7 @@ class Mission
 			class Item68
 			{
 				linkID=68;
-				item0=442;
+				item0=443;
 				item1=364;
 				class CustomData
 				{
@@ -23898,7 +23898,7 @@ class Mission
 			class Item69
 			{
 				linkID=69;
-				item0=443;
+				item0=444;
 				item1=364;
 				class CustomData
 				{
@@ -23908,7 +23908,7 @@ class Mission
 			class Item70
 			{
 				linkID=70;
-				item0=444;
+				item0=445;
 				item1=364;
 				class CustomData
 				{
@@ -23918,7 +23918,7 @@ class Mission
 			class Item71
 			{
 				linkID=71;
-				item0=445;
+				item0=432;
 				item1=364;
 				class CustomData
 				{
@@ -23928,7 +23928,7 @@ class Mission
 			class Item72
 			{
 				linkID=72;
-				item0=432;
+				item0=433;
 				item1=364;
 				class CustomData
 				{
@@ -23938,7 +23938,7 @@ class Mission
 			class Item73
 			{
 				linkID=73;
-				item0=433;
+				item0=434;
 				item1=364;
 				class CustomData
 				{
@@ -23948,7 +23948,7 @@ class Mission
 			class Item74
 			{
 				linkID=74;
-				item0=434;
+				item0=435;
 				item1=364;
 				class CustomData
 				{
@@ -23958,7 +23958,7 @@ class Mission
 			class Item75
 			{
 				linkID=75;
-				item0=435;
+				item0=437;
 				item1=364;
 				class CustomData
 				{
@@ -23968,7 +23968,7 @@ class Mission
 			class Item76
 			{
 				linkID=76;
-				item0=437;
+				item0=438;
 				item1=364;
 				class CustomData
 				{
@@ -23978,7 +23978,7 @@ class Mission
 			class Item77
 			{
 				linkID=77;
-				item0=438;
+				item0=439;
 				item1=364;
 				class CustomData
 				{
@@ -23988,7 +23988,7 @@ class Mission
 			class Item78
 			{
 				linkID=78;
-				item0=439;
+				item0=440;
 				item1=364;
 				class CustomData
 				{
@@ -23998,7 +23998,7 @@ class Mission
 			class Item79
 			{
 				linkID=79;
-				item0=440;
+				item0=427;
 				item1=364;
 				class CustomData
 				{
@@ -24008,7 +24008,7 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=427;
+				item0=428;
 				item1=364;
 				class CustomData
 				{
@@ -24018,7 +24018,7 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=428;
+				item0=429;
 				item1=364;
 				class CustomData
 				{
@@ -24028,7 +24028,7 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=429;
+				item0=430;
 				item1=364;
 				class CustomData
 				{
@@ -24038,16 +24038,6 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=430;
-				item1=364;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item84
-			{
-				linkID=84;
 				item0=477;
 				item1=2;
 				class CustomData
@@ -24055,11 +24045,21 @@ class Mission
 					type="TriggerOwner";
 				};
 			};
+			class Item84
+			{
+				linkID=84;
+				item0=481;
+				item1=548;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 			class Item85
 			{
 				linkID=85;
-				item0=481;
-				item1=548;
+				item0=482;
+				item1=483;
 				class CustomData
 				{
 					type="Sync";
@@ -24068,8 +24068,8 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=482;
-				item1=483;
+				item0=483;
+				item1=481;
 				class CustomData
 				{
 					type="Sync";
@@ -24078,16 +24078,6 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=483;
-				item1=481;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item88
-			{
-				linkID=88;
 				item0=484;
 				item1=2;
 				class CustomData
@@ -24095,11 +24085,21 @@ class Mission
 					type="TriggerOwner";
 				};
 			};
+			class Item88
+			{
+				linkID=88;
+				item0=485;
+				item1=416;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 			class Item89
 			{
 				linkID=89;
-				item0=485;
-				item1=416;
+				item0=484;
+				item1=485;
 				class CustomData
 				{
 					type="Sync";
@@ -24108,8 +24108,8 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=484;
-				item1=485;
+				item0=485;
+				item1=481;
 				class CustomData
 				{
 					type="Sync";
@@ -24118,8 +24118,8 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=485;
-				item1=481;
+				item0=480;
+				item1=2;
 				class CustomData
 				{
 					type="Sync";
@@ -24128,8 +24128,8 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=480;
-				item1=2;
+				item0=487;
+				item1=488;
 				class CustomData
 				{
 					type="Sync";
@@ -24138,7 +24138,7 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=487;
+				item0=481;
 				item1=488;
 				class CustomData
 				{
@@ -24148,8 +24148,8 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=481;
-				item1=488;
+				item0=500;
+				item1=421;
 				class CustomData
 				{
 					type="Sync";
@@ -24158,7 +24158,7 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=500;
+				item0=501;
 				item1=421;
 				class CustomData
 				{
@@ -24168,8 +24168,8 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=501;
-				item1=421;
+				item0=487;
+				item1=501;
 				class CustomData
 				{
 					type="Sync";
@@ -24179,7 +24179,7 @@ class Mission
 			{
 				linkID=97;
 				item0=487;
-				item1=501;
+				item1=497;
 				class CustomData
 				{
 					type="Sync";
@@ -24189,7 +24189,7 @@ class Mission
 			{
 				linkID=98;
 				item0=487;
-				item1=497;
+				item1=496;
 				class CustomData
 				{
 					type="Sync";
@@ -24199,7 +24199,7 @@ class Mission
 			{
 				linkID=99;
 				item0=487;
-				item1=496;
+				item1=491;
 				class CustomData
 				{
 					type="Sync";
@@ -24209,7 +24209,7 @@ class Mission
 			{
 				linkID=100;
 				item0=487;
-				item1=491;
+				item1=490;
 				class CustomData
 				{
 					type="Sync";
@@ -24218,16 +24218,6 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=487;
-				item1=490;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item102
-			{
-				linkID=102;
 				item0=2;
 				item1=502;
 				class CustomData
@@ -24235,9 +24225,9 @@ class Mission
 					type="TriggerOwner";
 				};
 			};
-			class Item103
+			class Item102
 			{
-				linkID=103;
+				linkID=102;
 				item0=506;
 				item1=481;
 				class CustomData
@@ -24245,9 +24235,9 @@ class Mission
 					type="Sync";
 				};
 			};
-			class Item104
+			class Item103
 			{
-				linkID=104;
+				linkID=103;
 				item0=2;
 				item1=507;
 				class CustomData
@@ -24255,11 +24245,21 @@ class Mission
 					type="TriggerOwner";
 				};
 			};
+			class Item104
+			{
+				linkID=104;
+				item0=245;
+				item1=246;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 			class Item105
 			{
 				linkID=105;
-				item0=245;
-				item1=246;
+				item0=511;
+				item1=510;
 				class CustomData
 				{
 					type="Sync";
@@ -24268,8 +24268,8 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=511;
-				item1=510;
+				item0=506;
+				item1=511;
 				class CustomData
 				{
 					type="Sync";
@@ -24278,8 +24278,8 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=506;
-				item1=511;
+				item0=244;
+				item1=510;
 				class CustomData
 				{
 					type="Sync";
@@ -24288,8 +24288,8 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=244;
-				item1=510;
+				item0=477;
+				item1=558;
 				class CustomData
 				{
 					type="Sync";
@@ -24299,7 +24299,7 @@ class Mission
 			{
 				linkID=109;
 				item0=477;
-				item1=558;
+				item1=557;
 				class CustomData
 				{
 					type="Sync";
@@ -24308,18 +24308,18 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=477;
-				item1=557;
+				item0=2;
+				item1=264;
 				class CustomData
 				{
-					type="Sync";
+					type="TriggerOwner";
 				};
 			};
 			class Item111
 			{
 				linkID=111;
-				item0=2;
-				item1=264;
+				item0=506;
+				item1=549;
 				class CustomData
 				{
 					type="TriggerOwner";
@@ -24328,16 +24328,6 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=506;
-				item1=549;
-				class CustomData
-				{
-					type="TriggerOwner";
-				};
-			};
-			class Item113
-			{
-				linkID=113;
 				item0=2;
 				item1=481;
 				class CustomData
@@ -24345,9 +24335,9 @@ class Mission
 					type="Sync";
 				};
 			};
-			class Item114
+			class Item113
 			{
-				linkID=114;
+				linkID=113;
 				item0=647;
 				item1=160;
 				class CustomData
@@ -24355,10 +24345,20 @@ class Mission
 					type="TriggerOwner";
 				};
 			};
+			class Item114
+			{
+				linkID=114;
+				item0=666;
+				item1=670;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 			class Item115
 			{
 				linkID=115;
-				item0=666;
+				item0=667;
 				item1=670;
 				class CustomData
 				{
@@ -24368,7 +24368,7 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=667;
+				item0=668;
 				item1=670;
 				class CustomData
 				{
@@ -24378,7 +24378,7 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=668;
+				item0=669;
 				item1=670;
 				class CustomData
 				{
@@ -24388,11 +24388,11 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=669;
-				item1=670;
+				item0=2;
+				item1=422;
 				class CustomData
 				{
-					type="Sync";
+					type="TriggerOwner";
 				};
 			};
 		};
