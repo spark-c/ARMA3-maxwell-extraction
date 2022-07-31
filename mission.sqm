@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1833.8251,60.406303,3293.3};
-		dir[]={0.69164884,-0.7223177,-0.0075293686};
-		up[]={0.72229296,0.69152123,-0.0078614419};
-		aside[]={-0.010885967,-1.7381717e-007,-1.00003};
+		pos[]={1880.5475,36.239021,3285.3647};
+		dir[]={0.62169981,-0.7313599,0.28038695};
+		up[]={0.66669762,0.68198586,0.30068088};
+		aside[]={0.41112599,8.6733053e-008,-0.91158551};
 	};
 };
 binarizationWanted=0;
@@ -1009,7 +1009,7 @@ class Mission
 			{
 				ammo=0;
 				fuel=0.58048123;
-				disableSimulation=1;
+				createAsSimpleObject=1;
 			};
 			id=0;
 			type="B_Boat_Transport_01_F";
@@ -1069,7 +1069,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -5539,7 +5539,7 @@ class Mission
 			{
 				name="create_first_task";
 				condition="call{this}";
-				onActivation="call{[[west, ""HQ""], ""Introduction""] remoteExec [""sideRadio"", ""west""]; 0 = [] execVM ""girna_anims.sqf"";}";
+				onActivation="call{[[west, ""HQ""], ""Introduction""] remoteExec [""sideRadio"", west]; 0 = [] execVM ""girna_anims.sqf"";}";
 				sizeA=10;
 				sizeB=10;
 				timeout[]={8,8,8};
