@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3383.1565,236.05019,2930.3174};
-		dir[]={0.69552195,-0.22574753,0.68211973};
-		up[]={0.1611729,0.97418582,0.15806721};
-		aside[]={0.70019466,7.4505806e-009,-0.713952};
+		pos[]={1833.8251,60.406303,3293.3};
+		dir[]={0.69164884,-0.7223177,-0.0075293686};
+		up[]={0.72229296,0.69152123,-0.0078614419};
+		aside[]={-0.010885967,-1.7381717e-007,-1.00003};
 	};
 };
 binarizationWanted=0;
@@ -5539,7 +5539,7 @@ class Mission
 			{
 				name="create_first_task";
 				condition="call{this}";
-				onActivation="call{[[west, ""HQ""], ""Introduction""] remoteExec [""sideRadio""]; 0 = [] execVM ""girna_anims.sqf"";}";
+				onActivation="call{[[west, ""HQ""], ""Introduction""] remoteExec [""sideRadio"", ""west""]; 0 = [] execVM ""girna_anims.sqf"";}";
 				sizeA=10;
 				sizeB=10;
 				timeout[]={8,8,8};
@@ -22984,7 +22984,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={3390.5347,231.77441,2937.8096};
-						angles[]={0,0.83241439,-0};
+						angles[]={0,0.83241439,0};
 					};
 					side="Independent";
 					flags=7;
