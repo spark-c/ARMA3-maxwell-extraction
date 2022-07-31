@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1665;
+	toggles=1537;
 	mods[]=
 	{
 		"3denEnhanced"
@@ -21,9 +21,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={1413.2128,30.199923,2353.2146};
-		dir[]={-0.82718539,-0.56031358,0.044626955};
-		up[]={-0.55955464,0.82821912,0.030185554};
-		aside[]={0.05387193,2.9044259e-007,0.99863517};
+		dir[]={-0.8271116,-0.56026351,0.044623021};
+		up[]={-0.55944991,0.82831436,0.030182559};
+		aside[]={0.053872079,0,0.99854779};
 	};
 };
 binarizationWanted=0;
@@ -9254,7 +9254,7 @@ class Mission
 			{
 				name="reinforce_maxwell";
 				condition="call{player inArea thisTrigger && ((group whistleblower) knowsAbout player > 1);}";
-				onActivation="call{hint ""BLUFOR detected by OPFOR 2 minutes ago. Spawning reinforcements.""; [] exec ""reinforce_maxwell.sqf""; [[west, ""HQ""], ""Reinforcements_Nearby""] remoteExec [""sideRadio""];}";
+				onActivation="call{hint ""BLUFOR detected by OPFOR 2 minutes ago. Spawning reinforcements.""; [""reinforce_maxwell.sqf""] remoteExec [""execVM"", 2]; [[west, ""HQ""], ""Reinforcements_Nearby""] remoteExec [""sideRadio""];}";
 				sizeA=175;
 				sizeB=225;
 				timeout[]={120,120,120};
@@ -12305,19 +12305,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1972.7834,1.6479516,2680.8391};
-				angles[]={6.1050925,0.98815304,0.38050637};
+				position[]={1972.7834,1.6483123,2680.8389};
+				angles[]={6.1050916,0.98815304,0.38049924};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
-				disableSimulation=1;
 			};
 			id=403;
 			type="B_Boat_Transport_01_F";
-			atlOffset=-0.11440462;
+			atlOffset=-0.11400002;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12366,19 +12365,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1967.9369,1.60288,2688.8135};
-				angles[]={6.2506976,1.3444867,0.15133385};
+				position[]={1967.9366,1.6033548,2688.814};
+				angles[]={6.2507048,1.3444794,0.15133749};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
-				disableSimulation=1;
 			};
 			id=407;
 			type="B_Boat_Transport_01_F";
-			atlOffset=-0.0024961829;
+			atlOffset=-0.0020000041;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12427,19 +12425,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1958.6949,1.4249866,2706.6809};
-				angles[]={6.2307329,1.3452384,0.12189306};
+				position[]={1958.6949,1.425432,2706.6814};
+				angles[]={6.2307382,1.3452299,0.1218938};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
-				disableSimulation=1;
 			};
 			id=408;
 			type="B_Boat_Transport_01_F";
-			atlOffset=-0.00041970611;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12488,19 +12484,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1961.8695,1.5077436,2700.7227};
-				angles[]={6.2506957,0.86026603,0.094715387};
+				position[]={1961.8695,1.5078779,2700.7227};
+				angles[]={6.2506871,0.86027282,0.094719015};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
-				disableSimulation=1;
 			};
 			id=409;
 			type="B_Boat_Transport_01_F";
-			atlOffset=-0.0031343102;
+			atlOffset=-0.0029999912;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12549,19 +12544,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={1947.1642,1.5528967,2725.1511};
-				angles[]={6.1959076,0.6744523,0.10708894};
+				position[]={1947.1646,1.5533489,2725.1514};
+				angles[]={6.1959186,0.6744476,0.1070934};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				createAsSimpleObject=1;
-				disableSimulation=1;
 			};
 			id=410;
 			type="B_Boat_Transport_01_F";
-			atlOffset=-0.0033914447;
+			atlOffset=-0.0029999912;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15854,7 +15848,7 @@ class Mission
 			{
 				name="begin_girna_counter";
 				condition="call{this && exfil;}";
-				onActivation="call{[[west, ""HQ""], ""Girna_Contact""] remoteExec [""sideRadio""]; 0 = [] execVM ""girna_counterattack.sqf"";}";
+				onActivation="call{[[west, ""HQ""], ""Girna_Contact""] remoteExec [""sideRadio""]; [""girna_counterattack.sqf""] remoteExec [""execVM"", 2];}";
 				sizeA=20;
 				sizeB=1000;
 				activationBy="WEST";
@@ -21053,7 +21047,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2786.0559,121.68008,2455.8372};
+						position[]={2780.688,120.99091,2460.5759};
+						angles[]={0,5.1293831,0};
 					};
 					side="West";
 					flags=5;
@@ -21063,7 +21058,6 @@ class Mission
 					};
 					id=652;
 					type="B_Soldier_F";
-					atlOffset=-7.6293945e-006;
 					class CustomAttributes
 					{
 						class Attribute0
